@@ -11,12 +11,14 @@ WeUI-Study
 
 ## 2. gulp server -s -p 8081
 
-启动服务
+启动服务，引导到example
 
-## 3. http://127.0.0.1:8081/example/
+### 2.1. http://127.0.0.1:8081/example/
 
 体验example的内容
 
-## 4. http://127.0.0.1:8081/study/
+## 3. gulp study -s p 8081
+启动服务，引导到study
+### 3.1 http://127.0.0.1:8081/study/
 
 体验study的内容

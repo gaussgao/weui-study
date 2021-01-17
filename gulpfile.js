@@ -237,6 +237,25 @@ gulp.task('server', function() {
     });
 });
 
+
+gulp.task('study', function() {
+    console.log("=====\r\nserver" ,yargs.p)
+    yargs.p = yargs.p || 8080;
+    browserSync.init({
+        server: {
+            baseDir: './dist',
+        },
+        ui: {
+            port: yargs.p + 1,
+            weinre: {
+                port: yargs.p + 2,
+            },
+        },
+        port: yargs.p,
+        startPath: '/study',
+    });
+});
+
 gulp.task('tag', function() {
     const tag = `v${pkg.version}`;
     return  exec(`git tag ${tag}`);
